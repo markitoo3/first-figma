@@ -1,0 +1,35 @@
+
+<div class="container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label class="form-label" for="usernameInput"></label>
+      <input
+        class="form-control"
+        type="text"
+        name="username"
+        id="usernameInput"
+        placeholder="Username"
+        formControlName="username"
+        [class.is-invalid]="myForm.get('username')?.invalid && myForm.get('username')?.touched"/>
+    </div>
+
+    <div>
+      <label class="form-label" for="nameInput"></label>
+      <input
+        class="form-control"
+        type="text"
+        name="password"
+        id="passwordInput"
+        placeholder="Password"
+        formControlName="password"
+        [class.is-invalid]="myForm.get('password')?.invalid && myForm.get('password')?.touched"/>
+
+        <button class="btn btn-primary" type="submit">
+          Submit
+        </button>
+    </div>
+  </form>
+
+  <span class="link">No account yet? Register</span>
+
+</div>
