@@ -9,6 +9,9 @@ import { MainPageGalleryComponent } from './components/main-page-gallery/main-pa
 import { MainPageCardsComponent } from './components/main-page-cards/main-page-cards.component';
 import { MainPageFooterComponent } from './components/main-page-footer/main-page-footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonPrimaryComponent } from './components/button-primary/button-primary.component';
+
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -20,13 +23,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainPageComponent,
     MainPageGalleryComponent,
     MainPageCardsComponent,
-    MainPageFooterComponent
+    MainPageFooterComponent,
+    ButtonPrimaryComponent
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

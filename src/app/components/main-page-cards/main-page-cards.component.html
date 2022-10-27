@@ -1,1 +1,14 @@
-<p>main-page-cards works!</p>
+<div class="card-container">
+  <div (click)="onImageClick()" class="img-container">
+    <img [src]="item.imgPath" alt="" />
+  </div>
+  <div class="details-container">
+    <h2>
+      {{ item.title }}
+    </h2>
+    <h3>{{ item.date }}</h3>
+    <app-button-primary
+      (Click)="onBookClick()"
+    ></app-button-primary>
+  </div>
+</div>

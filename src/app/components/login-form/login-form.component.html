@@ -24,7 +24,7 @@
         formControlName="password"
         [class.is-invalid]="myForm.get('password')?.invalid && myForm.get('password')?.touched"/>
 
-        <button class="btn btn-primary" type="submit">
+        <button class="btn btn-primary" type="submit" [routerLink]="['/mainpage']">
           Submit
         </button>
     </div>
